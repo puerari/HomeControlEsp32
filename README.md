@@ -10,4 +10,13 @@ Pequeno projeto desenvolvido em plataforma [Arduino](https://www.arduino.cc/) qu
 - As 16 saídas, necessárias para gerir os relés, são disponibilizadas através do expansor de I/Os [MCP23017](https://www.microchip.com/wwwproducts/en/MCP23017), com comunicação I2C;
 - O projeto faz uso do SO [FreeRTOS](https://www.freertos.org/), para, através de programação paralela, dividir o processamento entre os dois núcleos disponíveis no ESP32;
 - Além do acionamento físico dos relés, estes também são controlados pela internet através do protocolo [MQTT](http://mqtt.org/), de forma que este projeto pode ser facilmente integrado ao [HomeAssitant](https://www.home-assistant.io/). Inclusive fazendo uso do [Discovery](https://www.home-assistant.io/docs/mqtt/discovery/) e Last Will Testament (LWT);
-- O projeto também implementa watchdog que monitora travamentos e reinicia o microcontrolador;
+- O projeto também implementa watchdog que reinicializa o microcontrolador em caso de travamento;
+- Possibilita atualizações OTA.
+### Bibliotecas utilizadas:
+- FreeRTOS (SO);
+- WiFi (Conexão WiFi);
+- AsyncMqttClient (Conexão MQTT);
+- ESPmDNS (DNS);
+- WiFiUdp (UDP)
+- ArduinoOTA (OTA);
+- Wire (I2C);
