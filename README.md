@@ -1,6 +1,8 @@
 
 # HomeControlEsp32
 
+![Hardware Utilizado](images/hardware.jpg)
+
 ## Projeto desenvolvido para uso na automação/controle de luzes da minha casa.
 
 Pequeno projeto desenvolvido em plataforma [Arduino](https://www.arduino.cc/) que programa um microcontrolador [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview) para controlar uma Shield Relay de 16 Canais. Uma placa de circuito impresso própria foi desenvolvida para integrar o componentes de hardware utilizados.
